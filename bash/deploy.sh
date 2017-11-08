@@ -3,7 +3,7 @@
 #
 # Customize the following for your project/server
 #
-docRoot="/var/www/html/ionehvac"
+docRoot="/var/www/html/p4"
 usernameServer="root@104.131.178.233"
 
 
