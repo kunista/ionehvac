@@ -12,7 +12,7 @@
 */
 
 Route::get('/debug', function () {
-//testing
+//testin
     $debug = [
         'Environment' => App::environment(),
         'Database defaultStringLength' => Illuminate\Database\Schema\Builder::$defaultStringLength,
