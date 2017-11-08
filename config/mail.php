@@ -1,7 +1,8 @@
 <?php
 
 return [
-
+    'supportEmail' => 'help@ionehvac.kunista.me',
+    'systemEmail' => 'ionehvac@gmail.com',
     /*
     |--------------------------------------------------------------------------
     | Mail Driver
