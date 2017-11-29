@@ -41,3 +41,23 @@ Route::get('/debug', function () {
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/', 'HomeController@index');
+
+/**
+ * Product
+ */
+Route::get('/product/create', 'ProductController@create');
+Route::post('/product', 'ProductController@store');
+
+# Edit a product
+Route::get('/product/{id}/edit', 'ProductController@edit');
+Route::put('/product/{id}', 'ProductController@update');
+
+# Delete a product
+Route::get('/product/{id}/delete', 'ProductController@delete');
+Route::delete('/product/{id}/destroy', 'ProductController@destroy');
+
+Route::get('/product', 'ProductController@index');
+Route::get('/product/{title}', 'ProductController@show');
+
