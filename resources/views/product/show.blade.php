@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @push('head')
-<link href='/css/product/show.css' rel='stylesheet'>
+<link href='/css/product/product.css' rel='stylesheet'>
 @endpush
 
 @section('title')
@@ -9,11 +9,11 @@
 @endsection
 
 @section('content')
-
-    <h2>{{ $product['name'] }}</h2>
-    <p> {{ $product['description'] }}</p>
-    <p>Price: ${{ $product['price'] }}</p>
+    <div class='product cf'>
+    <h2> <strong>Name:</strong> {{ $product['name'] }}</h2>
+    <p> <strong>Description:</strong> {{ $product['description'] }}</p>
+    <p><strong>Price:</strong> ${{ $product['price'] }}</p>
     <a href='/product/{{ $product['id'] }}/edit'>Edit</a> |
     <a href='/product/{{ $product['id'] }}/delete'>Delete</a>
-
+    </div>
 @endsection

@@ -17,7 +17,7 @@
         <div class='details'>* Required fields</div>
 
         <label for='title'>* Name</label>
-        <input type='text' name='name' id='name' value='{{ old('name', $product->name) }}'>
+        <input type='text' name='name' id='name' value='{{ old('name', $product->name) }}' >
         @include('modules.error-field', ['fieldName' => 'name'])
 
         <label for='description'>* Description</label>

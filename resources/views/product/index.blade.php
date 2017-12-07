@@ -18,7 +18,7 @@
     @foreach($products as $product)
         <div class='product cf'>
             <h2>{{ $product['name'] }}</h2>
-            <p>By {{ $product['description'] }}</p>
+            <p> {{ $product['description'] }}</p>
             <a href='/product/{{ $product['id'] }}'>View</a> |
             <a href='/product/{{ $product['id'] }}/edit'>Edit</a> |
             <a href='/product/{{ $product['id'] }}/delete'>Delete</a>

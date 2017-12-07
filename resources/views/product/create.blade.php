@@ -15,15 +15,15 @@
         <div class='details'>* Required fields</div>
 
         <label for='title'>* Name</label>
-        <input type='text' name='name' id='name' value='{{ old('name', 'Frigidaire FG7MQ') }}'>
+        <input type='text' name='name' id='name' value='{{ old('name') }}' required autofocus placeholder="Please enter name of the product">
         @include('modules.error-field', ['fieldName' => 'name'])
 
         <label for='description'>* Description</label>
-        <input type='text' name='description' id='description' value='{{ old('description', "By The Frigidaire FG7MQ is an iQ Drive modulating gas furnace which analyzes the temperature every 60 seconds and adjusts itself accordingly. The unit's iQ Drive controller offers fully programmable comfort along with as well as maintenance and troubleshooting diagnostics.") }}'>
+        <input type='text' name='description' id='description' value='{{ old('description') }}' required autofocus placeholder="Please enter a description">
         @include('modules.error-field', ['fieldName' => 'description'])
 
         <label for='price'>* Price </label>
-        <input type='text' name='price' id='price' value='{{ old('price', '100') }}'>
+        <input type='text' name='price' id='price' value='{{ old('price') }}' required autofocus placeholder="Please enter price of the product in $">
         @include('modules.error-field', ['fieldName' => 'price'])
 
         <input type='submit' value='Add product' class='btn btn-primary btn-small'>

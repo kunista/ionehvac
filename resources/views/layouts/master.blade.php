@@ -23,22 +23,27 @@
 
 
     <header>
-        <div class="rowTwo">
-            <div class="columnTwo">
-                <a href='/'><img
-                            src='/images/I-One-Inc-logo.png'
-                            style='width:300px'
-                            alt='I-One Inc logo'>
-                </a>
+        <div class="row">
+            <div class="headerTwoColumns headerLogo">
+                <div class="container">
+                    <div class="columnTwo">
 
-            </div>
-            <div class="columnTwo headerContacts">
-                <p>Serving  MetroWest</p>
-                <h2>617-279-5260<br>
-                    617-283-1975
-                </h2>
+                        <a href='/'><img
+                                    src='/images/I-One-Inc-logo.png'
+                                    style='width:300px'
+                                    alt='I-One Inc logo'>
+                        </a>
+
+                    </div>
+                    <div class="columnTwo headerContacts">
+                        <p>Serving  MetroWest</p>
+                        <h2>617-279-5260<br>
+                            617-283-1975
+                        </h2>
 
 
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -56,33 +61,36 @@
     <footer>
 
         <div class="footerPhone">
-            <h2>617-279-5260<br>
-                617-283-1975
-            </h2>
+            <div class="container">
+                <h2>617-279-5260<br>
+                    617-283-1975
+                </h2>
+            </div>
         </div>
+        <div class="footerThreeColumns">
+            <div class="container">
+                <div class="column">
+                    <h2>About Us</h2>
+                    <p>I-One Inc is a locally owned and operated business that provides a wide range of HVAC services for homes and offices including designing, installation, and maintenance.</p>
+                    <p>We're a licensed, bonded and insured HVAC company. Call us today!</p>
 
-        <div class="row">
-            <div class="column">
-                <h2>About Us</h2>
-                <p>I-One Inc is a locally owned and operated business that provides a wide range of HVAC services for homes and offices including designing, installation, and maintenance.</p>
-                <p>We're a licensed, bonded and insured HVAC company. Call us today!</p>
-
-            </div>
-            <div class="column">
-                <h2>Our Service Area</h2>
-                <img src='/images/Coverage.jpg'
-                        style='width:300px'
-                        alt='I-One Inc Coverage'>
-            </div>
-            <div class="column">
-                <h2>Contact Us</h2>
-                <p>I-One Inc<br>
-                    Mailing Address:<br>
-                    1 Debra Lane<br>
-                    Framingham, MA 01701<br>
-                    isorlov@yahoo.com<br>
-                    617-279-5260<br>
-                    617-283-1975</p>
+                </div>
+                <div class="column">
+                    <h2>Our Service Area</h2>
+                    <img src='/images/Coverage.jpg'
+                         style='width:300px'
+                         alt='I-One Inc Coverage'>
+                </div>
+                <div class="column">
+                    <h2>Contact Us</h2>
+                    <p>I-One Inc<br>
+                        Mailing Address:<br>
+                        1 Debra Lane<br>
+                        Framingham, MA 01701<br>
+                        isorlov@yahoo.com<br>
+                        617-279-5260<br>
+                        617-283-1975</p>
+                </div>
             </div>
         </div>
 

@@ -43,15 +43,24 @@ section#main {
     margin:auto;
     padding-bottom:20px;
     text-align:center;
+    margin-top: 250px;
+    
 }
 
 header {
     text-align:left;
-    margin-top:20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+
 }
 
 footer {
     text-align:center;
+
+
 }
 
 
@@ -62,8 +71,6 @@ Nav bar
 -----------------------------------------------------*/
 nav {
     text-align:center;
-    border-top:1px solid #eee;
-    border-bottom:1px solid #eee;
     padding:5px;
     margin-top:10px;
 }
@@ -127,6 +134,7 @@ label, legend {
 
 .btn {
     margin-top:20px;
+    background-color: #44234a;
 }
 
 input[type=text], input[type=email], input[type=password], textarea, select {
@@ -213,11 +221,27 @@ Misc
 
 }
 
+.footerThreeColumns {
+    background-color: black;
+}
+
+.headerTwoColumns {
+    background-color: white;
+}
+
+.container {
+
+    width: 70%;
+    min-width: 1000px;
+    margin:auto;
+
+
+}
 .column {
     float: left;
     width: 33.33%;
-    padding: 50px;
-    height: 400px; /* Should be removed. Only for demonstration */
+    padding: 30px;
+    height: 350px; /* Should be removed. Only for demonstration */
     background-color: black;
     color:#fff; /* white */
     text-align:left;
@@ -230,12 +254,20 @@ Misc
     content: "";
     display: table;
     clear: both;
+
+
 }
 
 .headerContacts {
 
     text-align:right;
     color:#44234a; /* white */
+}
+
+.headerLogo {
+
+    text-align:left;
+
 }
 
 
@@ -247,14 +279,11 @@ Misc
 .columnTwo {
     float: left;
     width: 50%;
-    padding: 10px;
+    padding: 30px;
 
-    text-align:center;
+
 }
 
-/* Clear floats after the columns */
-.rowTwo:after {
-    content: "";
-    display: table;
-    clear: both;
+.cancelButton {
+    color: white;
 }

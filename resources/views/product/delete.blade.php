@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@push('head')
+<link href='/css/product/delete.css' rel='stylesheet'>
+@endpush
+
 @section('title')
     Delete Product
 @endsection
@@ -14,10 +18,12 @@
 
         {{ csrf_field() }}
 
-        <div class="confirmation"> Are you sure you want to delete product {{ $product->name }} ?
+        <div class="details"> Are you sure you want to delete product {{ $product->name }} ?
         </div>
             <input type='submit' value='Yes' class='btn btn-primary btn-small'>
-            <a class="btn btn-default btn-close" href="/product">Cancel</a>
+            <p class='cancel'>
+                <a href="/product">Cancel</a>
+            </p>
         </div>
     </form>
 
