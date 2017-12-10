@@ -13,7 +13,16 @@
     <h2> <strong>Name:</strong> {{ $product['name'] }}</h2>
     <p> <strong>Description:</strong> {{ $product['description'] }}</p>
     <p><strong>Price:</strong> ${{ $product['price'] }}</p>
-    <a href='/product/{{ $product['id'] }}/edit'>Edit</a> |
-    <a href='/product/{{ $product['id'] }}/delete'>Delete</a>
-    </div>
+
+        @if ($user and $user->isAdmin())
+            <a href='/product/{{ $product['id'] }}/edit'>Edit</a> |
+            <a href='/product/{{ $product['id'] }}/delete'>Delete</a>
+
+        @else
+
+
+
+        @endif
+
+     </div>
 @endsection

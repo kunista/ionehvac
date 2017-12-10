@@ -19,9 +19,17 @@
         <div class='product cf'>
             <h2>{{ $product['name'] }}</h2>
             <p> {{ $product['description'] }}</p>
-            <a href='/product/{{ $product['id'] }}'>View</a> |
-            <a href='/product/{{ $product['id'] }}/edit'>Edit</a> |
-            <a href='/product/{{ $product['id'] }}/delete'>Delete</a>
+            @if ($user and $user->isAdmin())
+                <a href='/product/{{ $product['id'] }}'>View</a> |
+                <a href='/product/{{ $product['id'] }}/edit'>Edit</a> |
+                <a href='/product/{{ $product['id'] }}/delete'>Delete</a>
+
+            @else
+
+                <a href='/product/{{ $product['id'] }}'>View</a>
+
+            @endif
+
         </div>
     @endforeach
 

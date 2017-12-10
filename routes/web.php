@@ -42,7 +42,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/', 'HomeController@index');
+
 
 /**
  * Product
@@ -60,4 +60,24 @@ Route::delete('/product/{id}/destroy', 'ProductController@destroy');
 
 Route::get('/product', 'ProductController@index');
 Route::get('/product/{title}', 'ProductController@show');
+
+
+Auth::routes();
+
+Route::get('/show-login-status', function () {
+    $user = Auth::user();
+
+    if ($user) {
+        dump('You are logged in.', $user->toArray());
+    } else {
+        dump('You are not logged in.');
+    }
+
+    return;
+});
+
+Route::get('/', 'HomeController@index');
+
+
+
 

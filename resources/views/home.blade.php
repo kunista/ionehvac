@@ -1,9 +1,9 @@
 @extends('layouts.master')
 
+@push('head')
+<link href='/css/product/product.css' rel='stylesheet'>
+@endpush
+
 @section('title')
-    Home page
-@endsection
-
-@section('content')
-
+    I-ONE HVAC
 @endsection

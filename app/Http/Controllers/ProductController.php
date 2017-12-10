@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Product;
+use Session;
+use App\Cart;
 
 class ProductController extends Controller
 {
@@ -139,4 +141,7 @@ class ProductController extends Controller
         $product->delete();
         return redirect('/product')->with('alert', 'The product '.$product->title.' was deleted.');
     }
+
+
+
 }

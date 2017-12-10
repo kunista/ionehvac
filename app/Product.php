@@ -25,4 +25,9 @@ class Product extends Model
 
         dump($data);
     }
+
+    public function orders()
+    {
+        return $this->belongsToMany('App\Order')->withTimestamps();
+    }
 }
