@@ -14,6 +14,7 @@ $nav = [
 elseif ($user and $user->isUser()) {
 $nav = [
 'product' => 'Products',
+'cart' => 'Shopping Cart',
 ];
 }
 else {
