@@ -82,7 +82,7 @@ Route::resource('cart', 'CartController', ['only' => ['index', 'store', 'update'
 Route::delete('/emptyCart', 'CartController@emptyCart');
 
 Route::post('/order', 'OrderController@store');
-Route::get('/order', 'CartController@index');
+Route::get('/order', 'OrderController@index');
 
 
 

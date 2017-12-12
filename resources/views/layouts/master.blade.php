@@ -15,11 +15,7 @@
 </head>
 <body>
 
-    @if(session('alert'))
-        <div class='alert'>
-            {{ session('alert') }}
-        </div>
-    @endif
+
 
 
     <header>
@@ -52,6 +48,11 @@
 
 
         @include('modules.nav')
+        @if(session('alert'))
+            <div class='alert'>
+                {{ session('alert') }}
+            </div>
+        @endif
     </header>
 
     <section id='main'>

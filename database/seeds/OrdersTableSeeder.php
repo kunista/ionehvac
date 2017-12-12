@@ -24,7 +24,8 @@ class OrdersTableSeeder extends Seeder
             Order::insert([
                 'created_at' => Carbon\Carbon::now()->subDays($count)->toDateTimeString(),
                 'updated_at' => Carbon\Carbon::now()->subDays($count)->toDateTimeString(),
-                'subtotal' => $order[0]
+                'subtotal' => $order[0],
+                'user_id' => 2,
             ]);
             $count--;
         }

@@ -31,7 +31,6 @@ class OrderProductTableSeeder extends Seeder
             # Now loop through each tag for this book, adding the pivot
             foreach ($orders as $orderId) {
                 $order = Order::find($orderId);
-                dump($product->name. 'connect to '. $orderId);
 
                 # Connect this order to this product
                 $product->orders()->save($order);

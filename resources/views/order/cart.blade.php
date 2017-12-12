@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @push('head')
-<link href='/css/product/product.css' rel='stylesheet'>
+<link href='/css/cart/cart.css' rel='stylesheet'>
 @endpush
 
 @section('title')
@@ -51,8 +51,6 @@
                                 <input type="hidden" name="_method" value="DELETE">
                                 <input type="submit" class="btn btn-danger btn-sm" value="Remove">
                             </form>
-
-
                         </td>
                     </tr>
 
@@ -60,6 +58,7 @@
 
 
                 <tr class="border-bottom">
+                    <td style="padding: 40px;"></td>
                     <td class="small-caps table-bg" style="text-align: right">Your Total</td>
                     <td class="table-bg">${{ Cart::subtotal() }}</td>
                     <td class="column-spacer"></td>
@@ -69,7 +68,7 @@
                 </tbody>
             </table>
 
-            <a href="{{ url('/product') }}" class="btn btn-primary btn-lg">Continue Shopping</a> &nbsp;
+            <a href="{{ url('/product') }}" class="btn btn-primary btn-small">Continue Shopping</a>
 
             <form method='POST' action='/order'>
 
@@ -78,18 +77,18 @@
                 <input type='submit' value='Place an order' class='btn btn-primary btn-small'>
             </form>
 
-            <div>
+            <div style="float:right">
                 <form action="{{ url('/emptyCart') }}" method="POST">
                     {!! csrf_field() !!}
                     <input type="hidden" name="_method" value="DELETE">
-                    <input type="submit" class="btn btn-danger btn-lg" value="Empty Cart">
+                    <input type="submit" class="btn btn-danger btn-small" value="Empty Cart">
                 </form>
             </div>
 
         @else
 
             <h3>You have no items in your shopping cart</h3>
-            <a href="{{ url('/product') }}" class="btn btn-primary btn-lg">Continue Shopping</a>
+            <a href="{{ url('/product') }}" class="btn btn-primary btn-small">Continue Shopping</a>
 
         @endif
 
