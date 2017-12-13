@@ -15,7 +15,7 @@
     @if(count($orders) > 0)
         @foreach($orders as $order)
             <div>
-                <h2>Order N: {{ $order['id'] }} with a subtotal of: ${{$order['subtotal']}}</h2>
+                <h2>Order N: {{ $order['id'] }} with a subtotal of: ${{$order->subtotalFormatted()}}</h2>
 
             </div>
 
@@ -34,7 +34,7 @@
             @foreach ($order->products()->get() as $item)
             <tr>
                 <td>{{ $item->name }}</td>
-                <td>${{ $item->price }}</td>
+                <td>${{ $item->priceFormatted() }}</td>
                 <td class=""></td>
 
             </tr>

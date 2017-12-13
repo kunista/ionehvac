@@ -43,7 +43,7 @@
                 @foreach (Cart::content() as $item)
                     <tr>
                         <td>{{ $item->name }}</td>
-                        <td>${{ $item->subtotal }}</td>
+                        <td>${{ number_format($item->subtotal, 2) }}</td>
                         <td class=""></td>
                         <td>
                             <form action="{{ url('cart', [$item->rowId]) }}" method="POST" class="side-by-side">

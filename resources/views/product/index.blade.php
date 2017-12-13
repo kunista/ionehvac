@@ -18,7 +18,7 @@
     @foreach($products as $product)
         <div class='product cf'>
             <h2>{{ $product['name'] }}</h2>
-            <p> {{ $product['description'] }}</p>
+            <p> ${{ $product->priceFormatted() }}</p>
             @if ($user and $user->isAdmin())
                 <a href='/product/{{ $product['id'] }}'>View</a> |
                 <a href='/product/{{ $product['id'] }}/edit'>Edit</a> |

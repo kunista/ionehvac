@@ -18,10 +18,9 @@ class ProductController extends Controller
 
         # Get from collection
 
-        $newProducts = $products->sortByDesc('createad_at')->take(1);
         return view('product.index')->with([
             'products' => $products,
-            'newProducts' => $newProducts,
+
         ]);
     }
 
@@ -103,7 +102,7 @@ class ProductController extends Controller
         $this->validate($request, [
             'name' => 'required',
             'description' => 'required',
-            'price' => 'required|numeric'
+            'price' => 'required|numeric|integer'
 
         ]);
 

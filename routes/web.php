@@ -78,7 +78,7 @@ Route::get('/show-login-status', function () {
 
 Route::get('/', 'HomeController@index');
 
-Route::resource('cart', 'CartController', ['only' => ['index', 'store', 'update', 'destroy']]);
+Route::resource('cart', 'CartController', ['only' => ['index', 'store', 'destroy']]);
 Route::delete('/emptyCart', 'CartController@emptyCart');
 
 Route::post('/order', 'OrderController@store');

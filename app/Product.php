@@ -30,4 +30,11 @@ class Product extends Model
     {
         return $this->belongsToMany('App\Order')->withTimestamps();
     }
+
+    public function priceFormatted()
+    {
+        return number_format($this->price, 2);
+
+
+    }
 }
