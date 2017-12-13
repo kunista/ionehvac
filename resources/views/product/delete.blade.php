@@ -18,7 +18,7 @@
 
         {{ csrf_field() }}
 
-        <div class="details"> Are you sure you want to delete product {{ $product->name }} ?
+        <div class="details"> Are you sure you want to delete product {{ $product->name }} ? </div>
         </div>
             <input type='submit' value='Yes' class='btn btn-primary btn-small'>
             <p class='cancel'>
