@@ -84,5 +84,8 @@ Route::delete('/emptyCart', 'CartController@emptyCart');
 Route::post('/order', 'OrderController@store');
 Route::get('/order', 'OrderController@index');
 
+Route::get('/register', 'Auth\RegisterController@showRegistrationForm')->name('registerform');
+Route::post('/register', 'Auth\RegisterController@register')->name('register');
+
 
 
